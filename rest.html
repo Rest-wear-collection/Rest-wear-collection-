@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST WEAR COLLECTION- Nguo na Vitu vya Ndani vya Umeme Morogoro</title>
+    <link rel="stylesheet" href="rest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="rest.jpg" alt="REST ELECTRONICS Logo">
+                <h1>REST WEAR COLLECTION</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Nyumbani</a></li>
+                    <li><a href="#products">Bidhaa</a></li>
+                    <li><a href="#about">Kuhusu Sisi</a></li>
+                    <li><a href="#location">Eneo</a></li>
+                    <li><a href="#contact">Mawasiliano</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Karibu REST WEAR COLLECTION</h2>
+                <p>Duka la kipekee la nguo na vitu vya ndani vya umeme Morogoro</p>
+                <p>Muda wa kazi: Saa 2 asubuhi - Saa 4 usiku</p>
+                <a href="#products" class="btn">Angalia Bidhaa Zetu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Bidhaa Zetu</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Zote</button>
+                <button class="filter-btn" data-filter="electronics">Vya Umeme</button>
+                <button class="filter-btn" data-filter="clothing">Nguo</button>
+                <button class="filter-btn" data-filter="kitchen">Vya Kupikia</button>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Kuhusu Sisi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p><b>REST WEAR COLLECTION</b> ni duka linalojishughulisha na uuzaji wa nguo na vitu vya ndani vya umeme kama TV na mafliji. Tupo Morogoro - Masika na tunahudumia wateja wetu kwa bidhaa za ubora wa hali ya juu.</p>
+                    <p>Tunafanya kazi kutoka saa 2 asubuhi hadi saa 4 usiku kila siku.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Duka la REST ELECTRONICS">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">Eneo Letu</h2>
+            <div class="location-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15867.12991122631!2d37.6452582208005!3d-6.82239439999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185a5d6d41e2c5a5%3A0x3543d37dd47dfc25!2sMorogoro%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="location-info">
+                    <h3>Maduka Yetu Morogoro - Masika</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Anwani: Morogoro - Masika, Tanzania</p>
+                    <p><i class="fas fa-clock"></i> Muda wa kazi: Saa 2 asubuhi - Saa 4 usiku</p>
+                    <p><i class="fas fa-phone"></i> Namba ya simu: +255 657 945 700</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Wasiliana Nasi</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Jina lako" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Barua pepe yako" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Namba ya simu">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Ujumbe wako" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Tuma Ujumbe</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Mawasiliano</h3>
+                    <p><i class="fas fa-phone"> +255 657 945 700</i> </p>
+                    <p><i class="fas fa-envelope"></i> info@restelectronics.co.tz</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Morogoro - Masika, Tanzania</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="rest.jpg" alt="REST ELECTRONICS Logo">
+                    <h3>REST WEAR COLLECTION</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Menyu</h4>
+                    <ul>
+                        <li><a href="#home">Nyumbani</a></li>
+                        <li><a href="#products">Bidhaa</a></li>
+                        <li><a href="#about">Kuhusu Sisi</a></li>
+                        <li><a href="#location">Eneo</a></li>
+                        <li><a href="#contact">Mawasiliano</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Mawasiliano</h4>
+                    <p>Morogoro - Masika, Tanzania</p>
+                    <p>+255 657 945 700</p>
+                    <p>info@restelectronics.co.tz</p>
+                </div>
+                <div class="footer-hours">
+                    <h4>Muda wa Kufungua</h4>
+                    <p>Jumatatu - jumapili: Saa 2 asubuhi - Saa 4 usiku</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 REST WEAR COLLECTION. Haki zote zimehifadhiwa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="rest.js"></script>
+</body>
+</html>
